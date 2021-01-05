@@ -1,0 +1,53 @@
+{
+  "name": "@hovrcat/reorder-json",
+  "version": "1.0.0",
+  "description": "Small tool used to reorder JSON keys alphabetically",
+  "main": "dist/index.js",
+  "bin": {
+    "reorder": "./bin/main"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "start": "npm run build && node dist/index --i ./examples/test1.json --o ./examples/test1.output.json",
+    "test": "ts-mocha src/**/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamRaduB/reorder-json.git"
+  },
+  "keywords": [
+    "json",
+    "reorder",
+    "sort"
+  ],
+  "author": "RaduB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IamRaduB/reorder-json/issues"
+  },
+  "homepage": "https://github.com/IamRaduB/reorder-json#readme",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "ora": "^5.2.0",
+    "chalk": "^4.1.0",
+    "yargs": "16.2.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.7",
+    "@types/chai": "^4.2.14",
+    "@types/chai-arrays": "^1.0.3",
+    "@types/chalk": "^2.2.0",
+    "@types/commander": "^2.12.2",
+    "@types/expect": "^24.3.0",
+    "@types/lodash": "^4.14.165",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^14.14.2",
+    "@types/sinon": "^9.0.8",
+    "chai": "^4.2.0",
+    "chai-arrays": "^2.2.0",
+    "mocha": "^8.2.1",
+    "sinon": "^9.2.1",
+    "ts-mocha": "^8.0.0",
+    "typescript": "^4.0.5"
+  }
+}

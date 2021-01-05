@@ -1,0 +1,10 @@
+{
+  "user": {
+    "firstName": "John",
+    "lastName": "Doe"
+  },
+  "address": {
+    "street": "Main St",
+    "number": 1
+  }
+}
