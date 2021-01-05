@@ -4,7 +4,7 @@
   "description": "Small tool used to reorder JSON keys alphabetically",
   "main": "dist/index.js",
   "bin": {
-    "reorder": "./bin/main"
+    "reorder": "dist/index.js"
   },
   "scripts": {
     "build": "tsc -b",
