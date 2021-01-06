@@ -3,9 +3,11 @@
 import yargs from 'yargs';
 import ora from 'ora';
 import chalk from 'chalk';
-import { Reorder } from './src/reorder';
 import { InvalidError, RequiredError } from './src/error';
 import { UtilService } from './src/util.service';
+import { Reorder } from './src/reorder';
+
+export { Reorder } from './src/reorder';
 
 async function init() {
   const reorder = new Reorder();
