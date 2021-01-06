@@ -1,15 +1,13 @@
-#!/usr/bin/env node
-
 import yargs from 'yargs';
 import ora from 'ora';
 import chalk from 'chalk';
-import { InvalidError, RequiredError } from './src/error';
-import { UtilService } from './src/util.service';
-import { Reorder } from './src/reorder';
+import { InvalidError, RequiredError } from './error';
+import { UtilService } from './util.service';
+import { Reorder } from './reorder';
 
-export { Reorder } from './src/reorder';
+export { Reorder } from './reorder';
 
-async function init() {
+export async function initCli() {
   const reorder = new Reorder();
   const utilService = new UtilService();
   const spinner = ora('Reordering...');
@@ -45,5 +43,3 @@ async function init() {
     spinner.succeed('✔ Reordered!');
   }
 }
-
-init();

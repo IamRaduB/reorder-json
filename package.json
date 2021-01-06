@@ -4,8 +4,9 @@
   "description": "Small tool used to reorder JSON keys alphabetically",
   "main": "dist/index.js",
   "bin": {
-    "reorder": "dist/index.js"
+    "reorder": "dist/entrypoint.js"
   },
+  "type": "module",
   "scripts": {
     "build": "tsc -b",
     "start": "npm run build && node dist/index --i ./examples/test1.json --o ./examples/test1.output.json",
@@ -26,6 +27,7 @@
     "url": "https://github.com/IamRaduB/reorder-json/issues"
   },
   "homepage": "https://github.com/IamRaduB/reorder-json#readme",
+  "files": ["dist/**/*"],
   "dependencies": {
     "lodash": "^4.17.20",
     "ora": "^5.2.0",
