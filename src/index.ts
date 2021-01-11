@@ -22,13 +22,13 @@ export async function initCli() {
   if (!i) {
     const err = new RequiredError();
     spinner.fail(err.message);
-    throw err;
+    return;
   }
 
   if (!utilService.parsePath(i as string)) {
     const err = new InvalidError();
     spinner.fail(err.message);
-    throw err;
+    return;
   }
 
   spinner.start();
@@ -38,7 +38,7 @@ export async function initCli() {
   } catch (e) {
     spinner.fail(`Error reordering json`);
     console.error(e);
-    throw e;
+    return;
   } finally {
     spinner.succeed('✔ Reordered!');
   }

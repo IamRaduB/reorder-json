@@ -6,7 +6,6 @@
   "bin": {
     "reorder": "dist/entrypoint.js"
   },
-  "type": "module",
   "scripts": {
     "build": "tsc -b",
     "start": "npm run build && node dist/index --i ./examples/test1.json --o ./examples/test1.output.json",
@@ -31,9 +30,9 @@
     "dist/**/*"
   ],
   "dependencies": {
+    "chalk": "^4.1.0",
     "lodash": "^4.17.20",
     "ora": "^5.2.0",
-    "chalk": "^4.1.0",
     "yargs": "16.2.0"
   },
   "devDependencies": {
